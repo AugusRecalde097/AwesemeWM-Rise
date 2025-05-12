@@ -82,7 +82,7 @@ theme.border_width = dpi(0)
 theme.oof_border_width = dpi(0)
 theme.border_normal = theme.darker_bg
 theme.border_focus = theme.darker_bg
-theme.widget_border_width = dpi(2)
+theme.widget_border_width = dpi(0)
 theme.widget_border_color = theme.darker_bg
 
 -- Radius

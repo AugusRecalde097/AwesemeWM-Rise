@@ -50,7 +50,7 @@ end
 
 -- Add a titlebar if titlebars_enabled is set to true in the rules.
 client.connect_signal("request::titlebars", function(c)
-    if( c.class == 'kitty' ) then return end
+    --    if( c.class == 'kitty' ) then return end
 
     -- Buttons for the titlebar
     ------------------------------
@@ -125,7 +125,7 @@ client.connect_signal("request::titlebars", function(c)
 
     awful.titlebar(c, {
         position = "bottom",
-        size = dpi(24)
+        size = dpi(10)
     }):setup{
         bg = beautiful.darker_bg,
         shape = helpers.prrect(beautiful.border_radius, false, false, true, true),

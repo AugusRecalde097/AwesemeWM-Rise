@@ -10,6 +10,9 @@ local helpers = require("helpers")
 -- Widgets externos
 local network = require("ui.widgets.network")
 
+-- Indicador de consumo de RAM y CPU
+local statsramcpu_widget = require("ui.widgets.stats")
+
 -- === WRAPPERS Y UTILIDADES ===
 
 local wrap_widget = function(widget)
@@ -205,6 +208,7 @@ screen.connect_signal("request::desktop_decoration", function(s)
             }, -- centro (podés poner un tasklist si querés)
             { -- derecha
                 layout = wibox.layout.fixed.horizontal,
+                statsramcpu_widget,
                 network,
                 stats,
                 notifs,

@@ -100,12 +100,12 @@ dashboard = wibox({
     ontop = true,
     visible = false
 })
-dashboard.y = dpi(25)
+dashboard.y = dpi(50)
 
 local slide = rubato.timed{
     pos = dpi(-300),
     rate = 60,
-    intro = 0.3,
+    intro = 0.1,
     duration = 0.8,
     easing = rubato.quadratic,
     awestore_compat = true,
@@ -115,7 +115,7 @@ local slide = rubato.timed{
 local slide_strut = rubato.timed{
     pos = dpi(0),
     rate = 60,
-    intro = 0.3,
+    intro = 0.1,
     duration = 0.8,
     easing = rubato.quadratic,
     awestore_compat = true,
@@ -132,7 +132,7 @@ end)
 
 dashboard_show = function()
     dashboard.visible = true
-    slide:set(100)
+    slide:set(0)
     slide_strut:set(375)
     dashboard_status = false
 end
@@ -188,3 +188,4 @@ dashboard:setup {
         shape = helpers.rrect(beautiful.dashboard_radius),
         widget = wibox.container.background
     }
+
