@@ -1,0 +1,32 @@
+# Archivos temporales de editores
+*~
+*.swp
+*.swo
+*.bak
+*.tmp
+*.log
+
+# Archivos de Awesome que no deberían subirse
+awesome/.session
+awesome/.lasttheme
+
+# Archivos ocultos que no necesitás versionar
+*.lock
+.DS_Store
+Thumbs.db
+
+# Archivos de rofi
+*.cache
+rofi.*
+
+# Archivos de kitty temporales
+*.pid
+
+# Copias de seguridad
+*backup*
+*#*
+
+# Archivos de Python si los usás para scripts
+__pycache__/
+*.py[cod]
+
